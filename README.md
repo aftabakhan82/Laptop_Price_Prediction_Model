@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ### 3. Run the Model
 
 ```bash
-python main.py
+streamlit run app.py
 ```
 Or experiment interactively:
 ```bash
