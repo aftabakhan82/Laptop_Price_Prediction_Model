@@ -88,7 +88,7 @@ Laptop_Price_Prediction_Model/
 
 ## 📊 Dataset & Feature Engineering
 
-- **Data Source:** [Insert source or description]
+- **Data Source:** [(https://www.kaggle.com/datasets/ehtishamsadiq/uncleaned-laptop-price-dataset)]
 - **Preprocessing:** Handles missing values, encodes categorical variables, scales numerical features
 - **Feature Selection:** Focuses on impactful attributes for price prediction
 
