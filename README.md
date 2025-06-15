@@ -46,7 +46,7 @@ This project predicts laptop prices using machine learning techniques. Given a s
 <img src="https://img.shields.io/badge/Demo-Available-brightgreen.svg?style=flat-square" alt="Demo Badge">
 
 > **Try the prediction notebook:**  
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([(https://colab.research.google.com/drive/1Su5A4kg1NH6CcgV7M2TOOptQ1Y0J_Npm?usp=sharing)])
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/drive/1Su5A4kg1NH6CcgV7M2TOOptQ1Y0J_Npm?usp=sharing])
 
 ---
 
