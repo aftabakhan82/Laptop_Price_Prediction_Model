@@ -13,17 +13,18 @@ ram = st.selectbox("RAM (GB)", [2, 4, 8, 16, 32, 64], index=2)
 weight = st.selectbox("Weight (kg)", [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0], index=2)
 memory = st.selectbox("Memory (GB)", [128, 256, 512, 1024, 1500, 2000], index=2)
 
-selected_model = st.selectbox("Choose a Model", ["Linear Regression", "Decision Tree", "Random Forest", "Support Vector", "KNN"])
+selected_model = st.selectbox("Choose a Model", ["Linear Regression", "Decision Tree", "Random Forest", "Support Vector", "KNN","XGBoost Regression"])
 
 test_data = np.array([[ram, weight, memory]])
 
 if st.button("🔍 Predict Price"):
     model_file_mapping = {
-        "Linear Regression": "Linear_model.pkl",
-        "Decision Tree": "Decision_tree_model.pkl",
-        "Random Forest": "Random_forest_model.pkl",
-        "Support Vector": "Support_vector_md.pkl",
-        "KNN": "Knn_Model.pkl"
+        "Linear Regression": "model/Linear_model.pkl",
+        "Decision Tree": "model/Decision_tree_model.pkl",
+        "Random Forest": "model/Random_forest_model.pkl",
+        "Support Vector": "model/Support_vector_md.pkl",
+        "KNN": "model/Knn_Model.pkl",
+        "XGBoost Regression":"model/XGBR_Model.pkl"
     }
 
     model = joblib.load(model_file_mapping[selected_model])
@@ -32,8 +33,8 @@ if st.button("🔍 Predict Price"):
     st.write(f"## 💰 Predicted Price: ₹{prediction[0]:.2f}")
 
     try:
-        y_test = joblib.load("y_test.pkl")
-        X_test = joblib.load("X_test.pkl")
+        y_test = joblib.load("model/y_test.pkl")
+        X_test = joblib.load("model/X_test.pkl")
         r2 = r2_score(y_test, model.predict(X_test))
         st.write(f"### 📊 Model Performance (R² Score): {r2:.4f}")
     except FileNotFoundError:
