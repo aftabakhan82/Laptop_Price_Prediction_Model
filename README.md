@@ -1,7 +1,3 @@
-Sure! Here’s a stylish, feature-rich README template for your project, tailored to Laptop Price Prediction Model. You can copy and paste this into your README.md file. Feel free to adjust sections according to your project details.
-
----
-
 # 💻 Laptop Price Prediction Model
 
 [![License](https://img.shields.io/github/license/aftabakhan82/Laptop_Price_Prediction_Model.svg?style=flat-square)](LICENSE)
